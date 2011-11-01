@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Prime Numbers</title>
+        <script type="text/javascript" language="javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js">
+        </script>
+        <script type="text/javascript" language="javascript" src="prime.js">
+        </script>
+        <script type="text/javascript" language="javascript">
+            $(document).ready(function() {
+                $('#is_prime').click(function() {
+                    $('#is_prime_result').text(
+                        is_prime($('#is_prime_x').val()).toString());
+                }).click();
+                $('#prime_between').click(function() {
+                    $('#prime_between_result').text(
+                        prime_between(
+                            $('#prime_between_x').val(),
+                            $('#prime_between_y').val()).toString());
+                }).click();
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Prime Numbers</h1>
+        <div>
+            <h2>Is x Prime?</h2>
+            <div>
+                <input id="is_prime_x" type="text" value="2" size="3" />
+                <button id="is_prime">Is it prime?</button>
+                <h3>Result</h3>
+                <div id="is_prime_result"></div>
+            </div>
+            <h2>What are the prime numbers between x and y?</h2>
+            <div>
+                x: <input id="prime_between_x" type="text" value="0" size="3" />
+                y: <input id="prime_between_y" type="text" value="100" size="3" />
+                <button id="prime_between">Find prime numbers...</button>
+                <h3>Result</h3>
+                <div id="prime_between_result"></div>                
+            </div>
+        </div>
+        <br clear="all" />
+        <br clear="all" />
+    </body>
+</html>
