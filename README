@@ -2,3 +2,4 @@ README for code-samples by Richard Flosi <richard.flosi@gmail.com>
 prime.py: python functions for prime numbers with unit tests.
 prime.js: javascript functions for prime numbers.
 prime.html: interface for prime.js functions.
+pp.py: implementation of the wikipedia PoliticalPhilosophy page in python.
